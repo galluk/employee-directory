@@ -10,7 +10,7 @@ class EmployeeResultContainer extends Component {
 
   // When this component mounts, get the random employees
   componentDidMount() {
-    this.getEmployees("5"); // return this many employees
+    this.getEmployees("10"); // return this many employees
   }
   
   getEmployees = query => {
