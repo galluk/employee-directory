@@ -1,8 +1,9 @@
 import React from "react";
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import BootstrapTable from 'react-bootstrap-table-next';
+import "./style.css";
 
-function EmployeeList(props) {
+function EmployeeTable(props) {
   
   function imageFormatter(cell, row){
     return (<img src={""+cell+""} alt=" " />);
@@ -29,6 +30,7 @@ function EmployeeList(props) {
   return (
 
     <BootstrapTable 
+      className='empTable'
       bootstrap4
       keyField='email' 
       data={ tableData } 
@@ -38,4 +40,4 @@ function EmployeeList(props) {
   );
 }
 
-export default EmployeeList;
+export default EmployeeTable;

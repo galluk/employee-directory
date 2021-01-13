@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import FilterForm from "./FilterForm";
-import EmployeeList from "./EmployeeList";
-import API from "../utils/API";
+import FilterForm from "../FilterForm/FilterForm";
+import EmployeeTable from "../EmployeeTable/EmployeeTable";
+import API from "../../utils/API";
 
 class EmployeeResultContainer extends Component {
   state = {
@@ -63,8 +63,7 @@ class EmployeeResultContainer extends Component {
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
         />
-        {/* <EmployeeList results={this.state.empResults} /> */}
-        <EmployeeList results={filteredEmployees} />
+        <EmployeeTable results={filteredEmployees} />
       </div>
     );
   }
