@@ -4,9 +4,9 @@ function Jumbotron() {
   return (
     <div className="jumbotron">
       <h1>Employee Directory</h1>
-      <p>
+      <h3>
         Here is a list of the company employees.
-      </p>
+      </h3>
     </div>
   );
 }
